@@ -1,0 +1,131 @@
+  @import url('https://fonts.googleapis.com/css2?family=Playfair:opsz@5..1200&display=swap');
+
+  * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      font-family: 'playfair', sans-serif;
+  }
+body{
+width: 100%;
+background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('bgimg.jpg');
+background-size:cover;
+height: 90vh;
+}
+  .wrapper{
+    margin: 120px auto;
+    max-width:fit-content;
+    width:100%;
+    background-color:#fff;
+    border-radius: 10px;
+    padding: 25px;
+    /* box-shadow: 5px 5px 5px  rgb(48, 224, 224,0.1); */
+background: linear-gradient(to bottom,rgb(48, 224, 224,0.9)  0% , rgb(72, 112, 99,0.8) 100%);
+  }
+  .wrapper header{
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .wrapper .inputfield{
+    display: flex;
+    height:45px;
+    width: 100%;
+    margin: 20px 0;
+  }
+  .inputfield input{
+    height: 100%;
+    width: 80%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 18px;
+    
+  }
+  .inputfield button{
+    border:none;
+    width: 50px;
+    height: 100%;
+    outline:none;
+    color: #fff;
+    background:rgb(25, 209, 43);
+    font-size:25px;
+    padding: 4%;
+    border-radius: 3px;
+    margin-left:5px;
+    cursor: pointer;
+    opacity: 0.6;
+    pointer-events: none;
+  }
+  .inputfield button.active{
+    opacity:1;
+    pointer-events: auto;
+  }
+  .wrapper .todolist{
+    max-height: 250px;
+    overflow-y: auto;
+  }
+  .todolist li{
+  list-style:none;
+  background:rgb(200, 206, 210); 
+  border-radius: 3px;
+  line-height: 40px;
+  height: 43px;
+  margin-bottom: 6px;
+  padding: 0px 25px;
+  font-size: 18px;
+  position: relative;
+  cursor: default;
+  overflow: hidden;
+  }
+
+  .todolist li span{
+    position: absolute;
+    right: -45px;
+    width: 30px;
+    color: tomato;
+    text-align: center;
+    cursor: pointer;
+    /* background: #fff; */
+    border-radius: 0 3px 3px 0;
+    transition: all 0.3s ease;
+  }
+  .todolist li:hover span{
+    right:0px;
+  }
+ .footer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+  align-items: center;
+  font-weight:bold;
+  color:red;
+  opacity: 0.6;
+  pointer-events: none;
+ }
+ .footer .active{
+  color: rgb(48, 249, 8);
+  opacity:1;
+  pointer-events: auto;
+}
+.footer button{
+  border:none;
+    outline:none;
+    color: #fff;
+    background: rgb(25, 209, 43);
+    font-size:15px;
+    padding: 6px 10px;
+    border-radius: 3px;
+    margin-left:5px;
+    cursor: pointer;
+    opacity: 0.6;
+    pointer-events: none;
+  }
+  .footer button.active{
+    color: #fff;
+    font: size 17px;
+    opacity:1;
+    pointer-events: auto;
+  }
+  
+ 
